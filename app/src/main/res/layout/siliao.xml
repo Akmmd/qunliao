@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#00000000"
+        android:src="@drawable/c04" />
+    
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="#00000000"
+        android:src="@drawable/d12" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton1"
+        android:textSize="20dip"
+        android:textColor="#ffffff"
+        android:background="#ff6600"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:background="#ffffff"
+        android:layout_alignBottom="@+id/check" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/check"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_toRightOf="@+id/id"
+        android:background="#ff9900"
+        android:text="连接" />
+
+    <TextView
+        android:id="@+id/wait"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id"
+        android:layout_centerHorizontal="true"
+        android:background="#ff7700"
+        android:textSize="20dip"
+        android:text="等待连接用户" />
+    
+    	<EditText
+           android:id="@+id/send_buf"
+           android:layout_width="240dp"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentLeft="true"
+           android:layout_alignTop="@+id/send"
+           android:background="#ffffff" >
+		
+           <requestFocus />
+       </EditText>
+
+       <Button
+           android:id="@+id/send"
+           android:layout_width="fill_parent"
+           android:layout_height="48dp"
+           android:layout_alignParentBottom="true"
+           android:layout_toRightOf="@+id/send_buf"
+           android:background="#ff6600"
+           android:textColor="#ffffff"
+           android:text="发送" />
+
+       <TextView
+           android:id="@+id/all_buf"
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_above="@+id/send"
+           android:layout_below="@+id/wait"
+           android:layout_centerHorizontal="true"
+           android:background="#d3d3d3"
+           android:textSize="16dip" />
+
+</RelativeLayout>

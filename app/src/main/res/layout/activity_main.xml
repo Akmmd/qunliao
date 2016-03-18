@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+	<ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#00000000"
+        android:src="@drawable/c04" />    
+    
+    
+    <ImageButton
+        android:id="@+id/dengru"
+        android:layout_width="144dp"
+        android:layout_height="36dp"
+		android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+
+        android:background="@layout/button_dengru_press" />
+
+	<ImageButton
+        android:id="@+id/zhuce"
+        android:layout_width="144dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/dengru"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+     
+        android:background="@layout/button_zhuce_press"/>   
+        
+	<ImageButton
+        android:id="@+id/dengru2"
+        android:layout_width="144dp"
+        android:layout_height="36dp"
+		android:layout_marginTop="254dp"
+        android:layout_centerHorizontal="true"
+		android:visibility="gone"
+        android:background="@layout/button_dengru_press" />    
+        
+
+	
+	
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="192dp"
+        android:layout_height="36dp"
+		android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"		
+		android:visibility="gone" 
+        android:src="@drawable/c02" />
+    
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="192dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+		android:visibility="gone"
+        android:src="@drawable/c03" />
+
+    <EditText
+        android:id="@+id/text_yonghuming"
+        android:layout_width="145dp"
+        android:layout_height="38dp"
+ 		android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        
+ 		android:visibility="gone"
+ 		android:background="@null"
+        android:singleLine="true"
+        android:textSize="12dip"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/text_mima"
+        android:layout_width="145dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/text_yonghuming"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+		android:visibility="gone" 
+        android:background="@null" 
+        android:singleLine="true"
+        android:textSize="12dip"
+        android:inputType="textPassword" />	
+	
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="#00000000"
+        android:visibility="gone"
+        android:src="@drawable/d12" />	
+    
+    
+</RelativeLayout>

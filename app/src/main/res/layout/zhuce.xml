@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- 最上方的红色框 --> 
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#00000000"
+        android:src="@drawable/c04" />    
+    
+ 	<!-- 您的账号 --> 
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="192dp"
+        android:layout_height="24dp"
+        android:layout_below="@+id/imageButton1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/c05" />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="48dp"
+        android:layout_height="24dp"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:gravity="center"
+        android:text="您的账号"
+        android:textSize="12dip" />
+    <ImageView
+        android:id="@+id/imageright1"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_toRightOf="@+id/imageView1"
+        android:visibility="gone"
+        android:src="@drawable/c07" />
+    
+ 
+    <!-- 您的密码 -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="192dp"
+        android:layout_height="24dp"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/c05" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="48dp"
+        android:layout_height="24dp"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_toLeftOf="@+id/imageView2"
+        android:gravity="center"
+        android:text="您的密码"
+        android:textSize="12dip" />
+
+    
+    
+    <!-- 确认密码 -->
+     <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="192dp"
+        android:layout_height="24dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/c05" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="48dp"
+        android:layout_height="24dp"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_toLeftOf="@+id/imageView3"
+        android:gravity="center"
+        android:text="确认密码"
+        android:textSize="12dip" />
+        
+    <!-- 注册2 -->
+    <ImageButton
+        android:id="@+id/zhuce"
+        android:layout_width="192dp"
+        android:layout_height="24dp"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@layout/button_zhuce_press_2" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="#00000000"
+        android:src="@drawable/d12" />
+   
+    
+    <!-- 输入框实体 -->
+    
+    
+    
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="170dp"
+        android:layout_height="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:background="@null" 
+        android:singleLine="true"
+        android:textSize="12dip"
+        android:ems="10" >
+        
+            <requestFocus />
+    </EditText>
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="170dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:background="@null" 
+        android:singleLine="true"
+        android:textSize="12dip"
+        android:inputType="textPassword" />
+        
+    <EditText
+        android:id="@+id/password2"
+        android:layout_width="170dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:background="@null" 
+        android:singleLine="true"
+        android:textSize="12dip"
+        android:inputType="textPassword" />    
+
+</RelativeLayout>

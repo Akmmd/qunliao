@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 定义一个文本框，使用绝对定位 -->
+    <TextView
+        android:layout_x="20dp"
+        android:layout_y="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户名："/>
+    <!-- 定义一个文本编辑框，采用绝对定位 -->
+    <EditText
+        android:layout_x="80dp"
+        android:layout_y="15dp"
+        android:layout_width="wrap_content"
+        android:width="200px"
+        android:layout_height="wrap_content"/>
+    <!-- 定义一个文本框，使用绝对定位 -->
+    <TextView
+        android:layout_x="20dp"
+        android:layout_y="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密码："/>
+    <!-- 定义一个文本编辑框，采用绝对定位 -->
+    <EditText
+        android:layout_x="80dp"
+        android:layout_y="75dp"
+        android:layout_width="wrap_content"
+        android:width="200px"
+        android:layout_height="wrap_content"
+        android:password="true"/>
+    <!-- 定义一个按钮，使用绝对定位 -->
+    <Button
+        android:layout_x="127dp"
+        android:layout_y="198dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录"/>
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <RadioGroup android:id="@+id/rg"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        </RadioGroup>
+
+    </TableRow>
+
+    <RadioButton android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:id="@+id/student"
+android:text="学生"
+        android:layout_gravity="center_vertical"
+        android:layout_x="166dp"
+        android:layout_y="137dp" />
+
+    <RadioButton android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/teacher"
+        android:text="老师"
+        android:checked="true"
+        android:layout_gravity="center_vertical"
+        android:layout_x="98dp"
+        android:layout_y="139dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="身份："
+        android:layout_x="45dp"
+        android:layout_y="148dp"/>
+</AbsoluteLayout>

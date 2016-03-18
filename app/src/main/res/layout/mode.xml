@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+	<ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#00000000"
+        android:src="@drawable/c04" />    
+    
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="144dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/imageButton1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="102dp"
+        android:background="#FF4400"
+        android:textColor="#ffffff"
+        android:text="私聊" />
+    
+	<Button
+        android:id="@+id/button2"
+        android:layout_width="144dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/imageButton1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:background="#FF5500"    
+        android:textColor="#ffffff"    
+        android:text="群聊" /> 
+        
+	<Button
+        android:id="@+id/button3"
+        android:layout_width="144dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/imageButton1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="198dp"
+       android:background="#FF6600"    
+       android:textColor="#ffffff"      
+        android:text="在线用户" />	
+        
+	<Button
+        android:id="@+id/button4"
+        android:layout_width="144dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/imageButton1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="246dp"
+       android:background="#FF7700"    
+       android:textColor="#ffffff"      
+        android:text="退出" />
+
+	<TextView
+	    android:id="@+id/id"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/imageButton1"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginTop="10dp"
+	    android:textSize="16dip"
+	    android:textColor="#d3d3d3"
+	    android:text="用户名" />
+	
+</RelativeLayout>
